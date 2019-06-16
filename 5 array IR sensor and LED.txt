@@ -1,0 +1,31 @@
+int LED = 13;
+int sensorPin1 = 2;
+int sensorPin2 = 3;
+int sensorPin3 = 4;
+int sensorPin4 = 5;
+int sensorPin5 = 6;
+
+void setup() {
+    pinMode(LED, OUTPUT);
+    pinMode(sensorPin1, INPUT);
+    pinMode(sensorPin2, INPUT);
+    pinMode(sensorPin3, INPUT);
+    pinMode(sensorPin4, INPUT);
+    pinMode(sensorPin5, INPUT);
+}
+void loop() {
+    int value1 = digitalRead(sensorPin1);
+    int value2 = digitalRead(sensorPin2);
+    int value3 = digitalRead(sensorPin3);
+    int value4 = digitalRead(sensorPin4);
+    int value5 = digitalRead(sensorPin5);
+    if (value1 == 1 || value2 == 1 || value3 == 1 || value4 == 1 || value5 == 1)
+{
+    digitalWrite(LED, HIGH);
+}
+    else
+{   digitalWrite(LED, LOW);
+}
+
+    delay(200);
+}

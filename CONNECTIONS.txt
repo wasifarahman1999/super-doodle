@@ -1,0 +1,13 @@
+Components:
+Arduino, LED, Resistance, IR sensor,Jumper wires(M-M,F-F,M-F)
+
+
+Connections:
+IR sensor:
+GND  -GND of Arduino
+5V/ VCC  - 5V of Arduino
+Outputs(1,2,3,4,5)  - digital pins(2,3,4,5,6)
+
+LED:
+Long leg  - digital pin 13 (breadboard-digpin 13)
+Short leg  - resistor(330 ohm optional), resistor’s short leg- GND of arduino
